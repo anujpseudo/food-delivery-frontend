@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/restaurent-interior.webp);
+    background-color: bisque;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    section {
+        height: 100vh;
+        /* Sign-Up and Login button */
+        header {
+            display: flex;
+            justify-content: space-around;
+            gap: 40rem;
+            padding: 2rem 0 1rem 0;
+            border-bottom: 2.5px solid black;
+            margin: 0 auto;
+            width: 70%;
+    
+            nav, div {
+                display: flex;
+                gap: 2rem;
+                border-bottom: 0.5rem;
+                font-size: 1.1rem;
+            }
+    
+            div {
+                justify-content: end;
+            }
+    
+            nav .order-now a {
+                color: red;
+                font-weight: 600;
+                font-size: 1.1rem;
+            }
+    
+            p {
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .container {
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+            text-align: center;
+            display: grid;
+            place-content: center;
+
+            .contact {
+                display: grid;
+                place-content: center;
+                justify-content: space-around;
+                grid-template-columns: repeat(2, 25rem);
+                gap: 2rem;
+                margin: 3rem 0;
+                padding: 2rem;
+                background-color: white;
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    
+                    label {
+                        text-align: left;
+                    }
+
+                    input, textarea {
+                        padding: 5px;
+                        width: 100%;
+                    }
+
+                    button {
+                        width: 20% ;
+                        align-self: center;
+                        padding: 5px;
+                        color: white;
+                        font-weight: bold;
+                        border-radius: 1rem;
+                        background-color: hsl(207, 56%, 50%);
+                        border: none;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* Footer Starts */
+footer {
+    background-image: repeating-linear-gradient(45deg, #fff 7.5px, #eee 7.5px, #ddd 7.5px, #ccc 7.5px, #bbb 7.5px, #aaa 7.5px, #999 7.5px, #888 7.5px, #777 7.5px, #666 7.5px, #555 7.5px, #444 7.5px, #333 7.5px, #222 7.5px, #111 17.5px, #000 17.5px, #111 17.5px, #222 7.5px, #333 7.5px, #444 7.5px, #555 7.5px, #666 7.5px, #777 7.5px, #888 7.5px, #999 7.5px, #aaa 7.5px, #bbb 7.5px, #ccc 7.5px, #ddd 7.5px, #eee 7.5px, #fff 7.5px);
+    text-align: center;
+    
+    .container {
+        display: grid;
+        place-self: center;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        row-gap: 1rem;
+        padding: 2.24rem 0 0 0;
+        text-align: center;
+        color: white;
+
+        .contacts, .social-media {
+            p {
+                letter-spacing: 0.75px;
+                font-weight: 500;
+                margin-bottom: 0.5rem;
+            }
+    
+            ul {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                list-style: none;
+    
+                li {
+                    i {
+                        color: bisque;
+                    }
+                }
+            }
+        }
+
+        p {
+            grid-column: 1/3;
+        }
+    }
+}
+/* Footer Ends */
