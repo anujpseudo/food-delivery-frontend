@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <main>    
+        <div class="container">
+            <form>
+                <label for="Phone">Phone No. :</label>
+                <input type="tel" id="Phone"
+                placeholder="123 456 7890" name="phone" minlength="10" maxlength="10" autocomplete="off" required>
+                
+                <label for="newPass">New Password :</label>
+                <input type="password" id="newPass" minlength="8" maxlength="12" name="Password" autocomplete="off" required>
+
+                <label for="confirmPass">Confirm Password :</label>
+                <input type="password" id="confirmPass" minlength="8" maxlength="12" autocomplete="off" required>
+
+                <button type="submit" class="signup-btn">Sign Up</button>
+
+                <div class="login">
+                    Already a member?
+                    <a href="./login.html">
+                        <p>Login</p>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="./signup.js"></script>
+</body>
+
+</html>
