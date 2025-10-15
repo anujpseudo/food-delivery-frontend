@@ -18,7 +18,7 @@ login.addEventListener('click', () => {
         phone.value = password.value = "";
         // showing success alert and redirect
         alert("Login Successfull");
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     } else {
         alert("Invalid Credentials");
     }
