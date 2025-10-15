@@ -16,5 +16,5 @@
 // Logout
 document.querySelector('.logout').addEventListener('click', () => {
     localStorage.setItem('isLoginSuccessful', 'no');
-    window.location.href = "./home.html";
+    window.location.href = "./index.html";
 } );
